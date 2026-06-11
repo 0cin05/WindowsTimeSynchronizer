@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Diagnostics;
 
-Console.WriteLine("Hello, World!");
+Process.Start("net", "start w32time").WaitForExit();
+Process.Start("w32tm", "/resync /force").WaitForExit();
+
+Environment.Exit(0);
