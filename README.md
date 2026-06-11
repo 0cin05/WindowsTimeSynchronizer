@@ -1,5 +1,7 @@
 # WindowsTimeSynchronizer
 
+[🇬🇧 English](README.md) | 🇩🇪 **Deutsch**
+
 A tiny console application that forces Windows to re-synchronize the system clock.
 It starts the Windows Time service and triggers an immediate sync via `w32tm`, so
 you no longer have to remember to fix a drifting clock by hand.
